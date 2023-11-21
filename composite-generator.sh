@@ -71,8 +71,8 @@ echo "  </children>" >> $ca
 echo "</repository>" >> $cc
 echo "</repository>" >> $ca
 
-zip -9 "${dest}/compositeArtifacts.jar" "${ca}"
-zip -9 "${dest}/compositeContent.jar" "${cc}"
+zip -j -9 "${dest}/compositeArtifacts.jar" "${ca}"
+zip -j -9 "${dest}/compositeContent.jar" "${cc}"
 
 rm "${ca}" "${cc}"
 
